@@ -3,7 +3,7 @@
 // 动物的接口
 interface Animal {
     name:string;
-    eat(str:string):void
+    eat():void
 }
 
 
@@ -14,7 +14,7 @@ class Dog implements Animal {
         this.name = name
     }
 
-    eat(str: string): void {
+    eat(): void {
         console.log(this.name+"在吃狗粮");
         
     }
@@ -22,7 +22,7 @@ class Dog implements Animal {
 
 let d = new Dog("小黑")
 
-d.eat("小黑")
+d.eat()
 
 
 //  语法: class 类名 implements 接口
